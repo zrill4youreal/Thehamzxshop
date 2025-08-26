@@ -1,0 +1,70 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Latar belakang biru muda */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #e6f2ff; /* Container biru lebih muda */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.profile {
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    position: relative; /* Penting untuk efek parallax */
+    top: 0;
+    transition: transform 0.1s ease-out; /* Transisi yang lebih cepat */
+}
+
+.links {
+    padding: 20px;
+}
+
+.link-button {
+    display: block;
+    padding: 12px 24px;
+    margin-bottom: 12px;
+    background-color: #3498db; /* Biru utama */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.link-button:hover {
+    background-color: #2980b9; /* Biru lebih gelap saat dihover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.link-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+    background-color: #b0c4de; /* Footer biru pucat */
+    padding: 10px;
+    font-size: 0.8em;
+}
